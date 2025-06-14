@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PDF Invoice Extractor - Project Docs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background: #007acc;
+      color: #fff;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h1, h2 {
+      color: #007acc;
+    }
+    code {
+      background: #eee;
+      padding: 2px 4px;
+      border-radius: 4px;
+    }
+    pre {
+      background: #eee;
+      padding: 1rem;
+      overflow: auto;
+      border-radius: 4px;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+    }
+    a {
+      color: #007acc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PDF Invoice Extractor</h1>
+    <p>📄 Extract invoice details from Amazon/Flipkart PDFs → Excel</p>
+  </header>
+
+  <main>
+    <h2>💡 Features</h2>
+    <ul>
+      <li>Extracts <strong>Invoice Number</strong>, <strong>Invoice Date</strong>, <strong>Total Amount</strong>, <strong>GSTIN</strong></li>
+      <li>Saves results to <code>.xlsx</code> file</li>
+      <li>No third-party APIs, data stays local</li>
+    </ul>
+
+    <h2>⚙ How to Run</h2>
+    <pre><code>pip install PyMuPDF openpyxl
+python main.py</code></pre>
+    <p>👉 Output file: <code>output/invoice_data.xlsx</code></p>
+
+    <h2>📂 Repo</h2>
+    <p>Check out the code on <a href="https://github.com/AryaPrakash03/pdf-invoice-extractor" target="_blank">GitHub</a>.</p>
+
+    <h2>👤 Author</h2>
+    <p><a href="https://github.com/AryaPrakash03" target="_blank">Arya Prakash Shrivastav</a></p>
+  </main>
+
+  <footer>
+    &copy; 2025 Arya Prakash Shrivastav. Open-sourced under MIT License.
+  </footer>
+</body>
+</html>
