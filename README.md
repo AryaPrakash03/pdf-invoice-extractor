@@ -9,9 +9,13 @@ It uses **PyMuPDF (fitz)** for PDF parsing — no third-party APIs, so all data 
 
 pdf-invoice-extractor/
 ├── main.py # Main Python script for extraction and Excel export
+
 ├── fk_invoice_1.pdf # Sample Flipkart invoice (for testing)
+
 ├── fk_invoice_2.pdf # Sample Flipkart invoice (for testing)
+
 ├── output/
+
 │ └── invoice_data.xlsx # Extracted data saved in Excel format
 
 ## ⚙ Features
