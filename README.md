@@ -45,11 +45,10 @@ Output/Invoice_data.xlsx
 
 📝 Sample Extracted Fields
 
-File	                            Invoice Number	  Invoice Date	      Total Amount	              GSTIN
-
-fk_invoice_1.pdf	              FAR1RI2600007537	  NOT FOUND            	249.00	           19ATNPP2571M1ZW
-fk_invoice_2.pdf	              (Your data here)	  (Your data)	        (Your data)	          (Your data)
-amz_invoice_1.pdf	              (Your data here)	  (Your data)	        (Your data)	           (Your data)
+File	Invoice Number	Invoice Date	Total Amount	GSTIN
+fk_invoice_1.pdf	FAR1RI2600007537	NOT FOUND	249.00	19ATNPP2571M1ZW
+fk_invoice_2.pdf	(Your data here)	(Your data)	(Your data)	(Your data)
+amz_invoice_1.pdf	(Your data here)	(Your data)	(Your data)	(Your data)
 
 💡 How It Works
 👉 The script uses regular expressions on extracted PDF text to locate patterns like:
