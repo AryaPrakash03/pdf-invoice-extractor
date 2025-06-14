@@ -31,7 +31,7 @@ pdf-invoice-extractor/
 ## 🚀 How to Run
 
 ### 1️⃣ Install dependencies
-```bash
+```
 pip install PyMuPDF openpyxl
 2️⃣ Run the script
 bash
@@ -39,6 +39,51 @@ Copy
 Edit
 python main.py
 By default, it looks for PDF files in the same directory or as specified in the code. The extracted data will be saved to:
+```
+
+Output/Invoice_data.xlsx
+
+📝 Sample Extracted Fields
+
+File	                            Invoice Number	  Invoice Date	      Total Amount	              GSTIN
+
+fk_invoice_1.pdf	              FAR1RI2600007537	  NOT FOUND            	249.00	           19ATNPP2571M1ZW
+fk_invoice_2.pdf	              (Your data here)	  (Your data)	        (Your data)	          (Your data)
+amz_invoice_1.pdf	              (Your data here)	  (Your data)	        (Your data)	           (Your data)
+
+💡 How It Works
+👉 The script uses regular expressions on extracted PDF text to locate patterns like:
+
+Invoice Number
+
+Invoice Date
+
+Grand Total
+
+GSTIN
+
+👉 The data is collected into a list of dictionaries and written to Excel using openpyxl / pandas.
+
+🛑 Limitations
+⚠ The current version relies on hard-coded patterns. It may fail if:
+
+The invoice format changes
+
+The PDF text is non-searchable (scanned image without OCR)
+
+📈 Future Improvements
+✅ Add support for scanned invoices using OCR (e.g., Tesseract)
+✅ Make field detection dynamic and configurable
+✅ Build a CLI or GUI around it
 
 
+📄 License
+This project is open-source and free to use under the MIT License.
+### 🚀 **Next Steps**
+👉 Save this as `README.md` in your project folder:
+
+echo "<paste content here>" > README.md
+git add README.md
+git commit -m "Add detailed README"
+git push
 
